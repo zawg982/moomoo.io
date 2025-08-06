@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mini Moomoo.io Clone</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="gameCanvas" width="900" height="600"></canvas>
+
+<div id="ui">
+  <div id="stats">
+    <h2 id="playerName">Player1</h2>
+    <div class="resources">
+      <div>Food: <span id="foodCount">0</span></div>
+      <div>Wood: <span id="woodCount">0</span></div>
+      <div>Stone: <span id="stoneCount">0</span></div>
+      <div>Gold: <span id="goldCount">0</span></div>
+      <div>Health: <span id="healthCount">100</span></div>
+      <div>XP: <span id="xpCount">0</span></div>
+      <div>Level: <span id="levelCount">1</span></div>
+    </div>
+  </div>
+  <div id="leaderboard">
+    <h3>Leaderboard</h3>
+    <div id="leaderboardList"></div>
+  </div>
+</div>
+
+<div id="hotbar">
+  <div class="hotbar-slot selected" data-index="0" title="Axe (Wood)">🪓</div>
+  <div class="hotbar-slot" data-index="1" title="Pickaxe (Stone)">⛏️</div>
+  <div class="hotbar-slot" data-index="2" title="Sword (Attack)">🗡️</div>
+  <div class="hotbar-slot" data-index="3" title="Food (Heal)">🍗</div>
+</div>
+
+<canvas id="minimap" width="220" height="220"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
