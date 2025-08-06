@@ -42,8 +42,8 @@
       if(y <= 1) mapBiomes[y][x] = "arctic";
       else if(y <= 30) mapBiomes[y][x] = "grass";
       else if(y === 65) mapBiomes[y][x] = "river";
-      else if(y <= 100) mapBiomes[y][x] = "grass";
-      else mapBiomes[y][x] = "desert";
+      else if(y <= 80) mapBiomes[y][x] = "grass";
+      else if(y <= 110 mapBiomes[y][x] = "desert";
     }
   }
 
