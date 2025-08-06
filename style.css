@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  background: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  user-select: none;
+  overflow: hidden;
+}
+#gameCanvas {
+  display: block;
+  margin: auto;
+  background: #222;
+  border: 3px solid #333;
+  image-rendering: pixelated;
+}
+/* UI Container */
+#ui {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 350px;
+  pointer-events: none;
+}
+/* Player Stats */
+#stats {
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  pointer-events: auto;
+}
+#stats h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #55ff55;
+}
+#stats .resources {
+  display: flex;
+  gap: 10px;
+}
+#stats .resources div {
+  background: #0009;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 50px;
+  text-align: center;
+  font-weight: 600;
+  user-select: text;
+}
+/* Leaderboard */
+#leaderboard {
+  background: rgba(20,20,20,0.5);
+  padding: 12px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 14px;
+  pointer-events: auto;
+  width: 340px;
+}
+#leaderboard h3 {
+  margin-bottom: 8px;
+  color: #33ff33;
+  border-bottom: 1px solid #555;
+  padding-bottom: 6px;
+}
+.leaderboard-entry {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+/* Hotbar */
+#hotbar {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+.hotbar-slot {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+  background: #222;
+  transition: border-color 0.3s;
+}
+.hotbar-slot.selected {
+  border-color: #55ff55;
+  color: #55ff55;
+}
+/* Minimap */
+#minimap {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 220px;
+  height: 220px;
+  background: rgba(0,0,0,0.5);
+  border: 2px solid #444;
+  border-radius: 8px;
+  z-index: 200;
+  pointer-events: none;
+}
