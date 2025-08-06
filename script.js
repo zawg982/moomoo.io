@@ -21,11 +21,11 @@
   const MAP_COLS = 30;
 
   // We'll create a biome grid matching your map text:
-  // Row 0-1: arctic (entire width)
-  // Row 2-3: grass (entire width)
-  // Row 4: river (entire width)
-  // Row 5-6: grass (entire width)
-  // Row 7-8: desert (entire width)
+  // Row 0-30: arctic (entire width)
+  // Row 30-65: grass (entire width)
+  // Row 65-80: river (entire width)
+  // Row 80-115: grass (entire width)
+  // Row 115-145: desert (entire width)
 
   const biomeColors = {
     river: "#3366cc",
